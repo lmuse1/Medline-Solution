@@ -1,0 +1,328 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  /* display: flex; */
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: fixed;
+}
+
+.App {
+  text-align: center;
+}
+
+.container {
+  display: flex; /* Make the container a flex container */
+  align-items: center;
+}
+.loginContainer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  text-align: left;
+}
+
+/* Style for the "Welcome to Medline" note */
+.welcome-note {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  width: 300px;
+}
+
+/* Style for the login container */
+.login-container {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  width: 300px;
+}
+
+.forgot-password {
+  text-align: center;
+}
+
+label {
+  display: block;
+  margin-bottom: 8px;
+  font-weight: bold;
+}
+
+input {
+  width: 100%;
+  padding: 8px;
+  margin-bottom: 16px;
+  box-sizing: border-box;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+button { /*For all buttons */
+  background-color: #007bff;
+  color: #fff;
+  padding: 10px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  width: 100%;
+}
+
+button:hover { /*For all buttons */
+  background-color: #0056b3;
+}
+
+
+/* Adding the home css stuff */
+
+.center-container {
+  padding: 10px;
+}
+
+.search-container {
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  padding: 10px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  margin-bottom: 20px;
+}
+
+.most-used-templates {
+  display: flex;
+  justify-content: space-around;
+}
+
+.template-item {
+  width: 30%;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  padding: 10px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  margin-bottom: 20px;
+  cursor: pointer;
+}
+
+.template-item:hover {
+  background-color: #f0f0f0;
+}
+
+.box-container{
+  display: flex;
+    flex-direction: center;
+    justify-content: space-evenly;
+    align-items: center;
+    margin: 20px; /* Increase the margin to create more space between the boxes */
+    flex: 1;
+}
+
+.create-button,
+.recently-used {
+  width: 100px;
+  height: 100px;
+  display:inline-block;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  padding: 10px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  margin-bottom: 20px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.button:hover, .create-button:hover,
+.recently-used:hover {
+    background-color: #9ef4f1a1;
+}
+
+.label {
+  font-size: 17px;
+  margin-top: 10px;
+}
+
+.plus-icon::after {
+  content: "+";
+  font-size: 100px; /* Adjust the font size */
+  color: #007bff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+
+/* {Styling for the h2 menue options start here} */
+.menu-h2 {
+  font-family: "Lato", sans-serif;
+  color: #f2f2f2;
+}
+
+/* {Styling for the blank scorecard starts here} */
+
+th, td {
+  border: 1px solid #000;
+  padding: 5px;
+
+}
+
+th {
+  background-color: #f2f2f2;
+}
+
+h2 {
+  padding:10px;
+}
+
+.scorecard-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  /* justify-content: center;
+  position: absolute; */
+  height: 25vh;
+  width:auto;
+}
+.scorecardinput-container{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 20vh;
+  width: 400px;
+  padding: 120px;
+}
+/* Style the body and center the Header at the top of the page */
+body {
+  /* margin: 0;
+  padding: 0; */
+  /* display: flex;  */
+  /* Display: flect is what is impacting the format of the header. Lets make a class name for the container of the drop downs so that it can maintain this style*/
+  /* justify-content: center; Center horizontally */
+  align-items: center; /* Center vertically */
+  /* min-height: 50vh;  */
+  /* Minimum viewport height */
+  
+}
+
+/* Style the Header component (you can add more styles specific to the Header here) */
+
+.logo{
+  flex: auto;
+  width: 80px;
+  position: absolute;
+  top: 30px;
+  left: 100px;
+}
+.user-name{
+  flex: auto;
+  width: 80px;
+  position: absolute;
+  top: 30px;
+  right: 100px;
+}
+
+.Department select{
+  width: 70%;
+  height: 25px;
+  margin-bottom: 10px;
+  border-radius: 4px;
+}
+.Scorecard-header{
+  width: 100%;
+  line-height: 10vh;
+  margin-bottom: 10%;
+  font-style: italic;
+}
+.Score-range select{
+  width: 70%;
+  height: 25px;
+  margin-bottom: 10px;
+  border-radius: 4px;
+}
+.Justification-score input{
+  flex: auto;
+  width: 70%;
+  height: 25px;
+  margin-bottom: 10px;
+  border-radius: 4px;
+}
+.form-control {
+  flex: auto;
+  width: 70%;
+  height: 25px;
+  border-radius: 4px;
+  margin-bottom: 8px;
+}
+.timestamp{
+  flex: auto;
+  position:fixed;
+  bottom: 10px;
+  right: 10px;
+}
+.submit-button{
+  flex: auto;
+  width: 20%;
+  height: auto;
+  nav-left: current;
+  margin-right: 50px;
+}
+.cancel-button {
+  flex: auto;
+  width: 20%;
+  height: auto;
+  margin-top: 5%;
+}
+
+
+
+/* CSS for the app container */
+.tool-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  position: fixed;
+  bottom:100px;
+}
+
+.scorecardinput-container {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.scorecard-table {
+  width: 100%;
+  overflow-x: auto; /* Add horizontal scrolling if necessary */
+  margin-top: 35px;
+}
+
+.scorecard-content-container {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin-left: 120px;
+  padding:0%;
+}
+
+.tool-button {
+  background-color: rgb(64, 52, 142);
+  color: white; /* Optional, to change text color to white for better contrast */
+  border: 20px; /* Optional, to remove the button border */
+  padding: 10px; /* Optional, adjust padding as needed */
+  cursor: pointer; /* Optional, to show a pointer cursor on hover */
+}
+
+.dropdown-box {
+  width: 10px;
+
+}
+
+.datetime {
+  position: absolute;
+  bottom: 0;
+  right:0;
+  margin:10px;
+}
